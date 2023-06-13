@@ -1,0 +1,24 @@
+﻿@model List<Hotel_Assignment.Models.HotelBooking>
+
+<div class="container">
+    <table class="table table-bordered border-dark">
+    <tr>
+         <td><b>Id</b></td>
+         <td><b>Guest_name</b></td>
+         <td><b>Start_Date</b></td>
+         <td><b>End_Date</b></td>
+    </tr>
+       @{
+        foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>  
+                <td>@item.GuestName</td>
+                <td>@item.DateStart</td>
+                <td>@item.DateEnd</td>
+            </tr>
+        }
+       }
+      
+    </table>
+</div>

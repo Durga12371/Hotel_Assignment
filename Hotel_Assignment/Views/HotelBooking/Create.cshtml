@@ -1,0 +1,35 @@
+﻿@model Hotel_Assignment.Models.HotelBooking
+<h1>Create Hotel_Room</h1>
+<div class="container">
+    <div class="row">
+        <form method="post" asp-controller="HotelBooking" asp-action="HotelBookingDetails">
+            <div class="row mb-03">
+                <div class="col-12"><label for="Id">Booking_ID</label></div>
+                <div class="col-12"><input type="number" class="form-control" asp-for=Id name="Id" placeholder="Enter_Your_ID" required /> </div>
+            </div>
+            <div class="row mb-03">
+                    <div class="col-12"><label for="GuestName">Guest_Name</label></div>
+                    <div class="col-12"><input type="text" class="form-control" asp-for=GuestName name="GuestName" placeholder="Enter_Name"  required /> </div>
+                </div>
+            <div class="row mb-03">
+                    <div class="col-12"><label for="date_start">Date_Start</label></div>
+                    <div class="col-12"><input type="date" class="form-control" asp-for=DateStart name="date_start" placeholder="Date_Start"  required /> </div>
+
+             </div>
+            <div class="row mb-03">
+                <div class="col-12"><label for="date_end">Date_End</label></div>
+                <div class="col-12"><input type="date" class="form-control" asp-for=DateEnd name="Date_End" placeholder="Date_End" required /> </div>
+            </div>
+            <div class="row mb-03">
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+</div>
